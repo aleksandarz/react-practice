@@ -1,0 +1,33 @@
+.app
+{
+    margin: 1rem;
+}
+
+.new-product
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.25rem;
+    width: 15rem;
+    height: 1.75rem;
+    margin: 0.5rem 0;
+    border-radius: 0.25rem;
+    border: 1px solid lightgray;
+}
+
+.buttons
+{
+    background-color: lightskyblue;
+    color: white;
+    width: 10rem;
+    height: 1.75rem;
+    border-radius: 0.25rem;
+    border: none;
+    transition: color 750ms ease;
+}
+
+.buttons:hover
+{
+    background-color: deepskyblue;
+}
+
