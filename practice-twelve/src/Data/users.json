@@ -1,0 +1,27 @@
+[
+  {
+    "username": "Aleksandar",
+    "email": "aleksandar.zecevic@gmail.com",
+    "password": "plane123"
+  },
+  {
+    "username": "Mina",
+    "email": "mina.petrovic@gmail.com",
+    "password": "pass789"
+  },
+  {
+    "username": "Nikola",
+    "email": "nikola.jovic@gmail.com",
+    "password": "car123"
+  },
+  {
+    "username": "Jovana",
+    "email": "jovana.milosevic@gmail.com",
+    "password": "secure987"
+  },
+  {
+    "username": "Luka",
+    "email": "luka.stevanovic@gmail.com",
+    "password": "react123"
+  }
+]
