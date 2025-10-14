@@ -68,17 +68,17 @@ function Products(props) {
           ))}
         </div>
 
-        <div className="flex flex-col gap-3 mt-3 mb-3">
-          <h1 className="text-2xl font-bold">Search products</h1>
+        <div className="flex flex-col gap-3">
+          <h1 className="text-2xl font-bold">SearchBar products</h1>
           <p>{ infoMessage }</p>
           <input className="border border-gray-400 rounded h-8 w-60 pl-1"
-                 type="text" name="" id="" placeholder="Search products" onChange={ (e) => {
+                 type="text" name="" id="" placeholder="SearchBar products" onChange={ (e) => {
             setSearchedProduct(e.target.value);
             console.log(e.target.value);
           }}/>
           <button className="bg-cyan-400 hover:bg-cyan-700 transition duration-300 ease-in-out text-white rounded h-8 w-40" onClick={ () => {
             console.log(searchedProduct);
-            console.log(productExistence(products, searchedProduct)); } }>Search products</button>
+            console.log(productExistence(products, searchedProduct)); } }>SearchBar products</button>
         </div>
 
         <div className="flex flex-col gap-3 mt-3 mb-3">
