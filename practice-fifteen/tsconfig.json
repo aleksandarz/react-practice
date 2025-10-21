@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* 🔹 Environment (React app radi u browseru, ne u Node-u) */
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+
+    /* 🔹 React JSX podrška */
+    "jsx": "react-jsx",
+
+    /* 🔹 Dozvoli postepeni prelaz sa JS na TS */
+    "allowJs": true,
+    "checkJs": false,
+
+    /* 🔹 Striktnija provera */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* 🔹 Importi i moduli */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    /* 🔹 Generalno ponašanje */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+
+    /* 🔹 Opcionalno za debugging */
+    "sourceMap": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
