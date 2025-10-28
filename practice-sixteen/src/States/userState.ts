@@ -1,7 +1,12 @@
 import { atom } from "recoil";
 import { localStorageEffect } from "../Effects/localStorageEffect";
 
-export const userState = atom({
+type UserType = {
+    loggedIn: boolean;
+    email: string;
+}
+
+export const userState = atom<UserType>({
     key: "userState",
     default: {
         loggedIn: false,
