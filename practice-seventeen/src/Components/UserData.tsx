@@ -7,8 +7,7 @@ const UserData = () => {
   console.log("User data: ", userData);
 
   return (
-    <>
-    </>
+    <></>
   );
 };
 
