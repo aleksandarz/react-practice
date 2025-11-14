@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import SearchProducts from "@/app/components/SearchProducts";
 
 const ProductList = ({ products }) => {
   console.log(products);
@@ -12,25 +13,24 @@ const ProductList = ({ products }) => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-5 m-5">
+      <SearchProducts />
+
+      <div>
         {products.map((product) => (
           <div
-            className="flex flex-col items-center w-2/7 bg-white shadow rounded p-3 min-h-[400px]"
             key={product.id}>
-            <div className="w-[250px] h-[250px] overflow-hidden flex items-center justify-center">
+            <div>
               <Image
                 src={product.thumbnail}
                 alt={product.title}
                 width={250}
-                height={250}
-                className="object-cover w-full h-full rounded"/>
+                height={250} />
             </div>
             <h2>{product.title}</h2>
             <p>${product.price}</p>
             <p>Left in stock: {product.stock}</p>
             <button
-              onClick={() => productDetailsBtn(product.id)}
-              className="btn btn-primary w-3/4 mt-2">
+              onClick={() => productDetailsBtn(product.id)}>
               See details
             </button>
           </div>
