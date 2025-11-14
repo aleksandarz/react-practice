@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import SearchProducts from "@/app/components/SearchProducts";
 
 const ProductList = ({ products }) => {
   console.log(products);
@@ -13,8 +12,6 @@ const ProductList = ({ products }) => {
 
   return (
     <>
-      <SearchProducts />
-
       <div>
         {products.map((product) => (
           <div
