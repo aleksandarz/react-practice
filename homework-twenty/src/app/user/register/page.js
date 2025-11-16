@@ -12,10 +12,15 @@ const Register = () => {
   console.log(auth);
 
   const register = async (email, password) => {
-    const res = await createUserWithEmailAndPassword(auth, email, password);
+    try {
+      const res = await createUserWithEmailAndPassword(auth, email, password);
 
-    setEmail("");
-    setPassword("");
+      setEmail("");
+      setPassword("");
+
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
